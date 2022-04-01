@@ -2,8 +2,8 @@ package aiac.gi18.java.complexe;
 
 public class Complexe {
 	
-	private double img;
-	private double reel;
+	double img;
+	double reel;
 	
 	private static int compteur=0;
 	
@@ -55,7 +55,14 @@ public class Complexe {
 	
 	@Override
 	public String toString() {
-		return reel+" + "+img;
+		return reel+" + i "+img;
+	}
+		
+	@Override
+	public boolean equals(Object obj) {
+		if( ! (obj instanceof Complexe) )  return false;
+		return ((Complexe)obj).reel==this.reel && ((Complexe)obj).img==this.img;
+
 	}
 
 }
