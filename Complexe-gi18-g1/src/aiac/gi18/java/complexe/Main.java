@@ -26,7 +26,7 @@ public class Main {
 		List<Complexe> l=new Listecomplexe();
 		c1.equals(c3);  c1.equals("hekks");
 		l.add(c1); l.add(c2); l.add(c1); l.add(c3);
-		System.out.println(l);
+		System.out.println(l); System.out.println(c1.compareTo(c2));
 		
 
 	}
